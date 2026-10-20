@@ -1,0 +1,25 @@
+# Archivos y carpetas temporales de Vivado
+*.jou
+*.log
+*.str
+*.dcp
+*.wdb
+*.vcd
+
+# Carpetas generadas automáticamente por Vivado
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+
+# Archivos de reportes temporales pesados de simulación
+xsim.dir/
+webtalk*.xml
+webtalk*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
