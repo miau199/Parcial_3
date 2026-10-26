@@ -1,0 +1,217 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : alu_top
+Version: X-2025.06-SP5-5
+Date   : Mon Oct 26 15:09:45 2026
+****************************************
+
+Operating Conditions: 25CTT1P8   Library: M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+Wire Load Model Mode: enclosed
+
+  Startpoint: R_439 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mult_x_2/R_331
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_top            MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_439/CK (DFFRBQX2TAS7)                  0.00       0.00 r
+  R_439/Q (DFFRBQX2TAS7)                   2.36       2.36 r
+  U784/O (XOR2X2TAS7)                      1.61       3.98 r
+  U785/O (NAND2X4TAS7)                     0.49       4.47 f
+  U328/O (OAI22B2X2TAS7)                   1.03       5.49 r
+  U382/O (XOR2X1TAS7)                      1.74       7.23 r
+  U694/O (XNOR2X1TAS7)                     1.45       8.68 r
+  U746/O (XNOR2X1TAS7)                     1.70      10.38 r
+  U365/O (XNOR2X2TAS7)                     1.61      11.99 f
+  U364/O (XNOR2X1TAS7)                     1.20      13.19 f
+  mult_x_2/R_331/D (DFFSBQX4TAS7)          0.00      13.19 f
+  data arrival time                                  13.19
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  mult_x_2/R_331/CK (DFFSBQX4TAS7)         0.00       9.80 r
+  library setup time                      -1.27       8.53
+  data required time                                  8.53
+  -----------------------------------------------------------
+  data required time                                  8.53
+  data arrival time                                 -13.19
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.66
+
+
+  Startpoint: mult_x_2/R_348
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: flags_out[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_top            MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  mult_x_2/R_348/CK (DFFSBQX2TAS7)         0.00       0.00 r
+  mult_x_2/R_348/Q (DFFSBQX2TAS7)          2.00       2.00 r
+  U872/O (XOR2X1TAS7)                      1.67       3.67 r
+  U718/O (XNOR2X1TAS7)                     1.85       5.52 r
+  U302/O (OAI22B2X2TAS7)                   0.53       6.05 f
+  U416/O (AOI12X2TAS7)                     1.52       7.57 r
+  U928/O (INVX1TAS7)                       0.49       8.06 f
+  U775/O (XNOR2X1TAS7)                     1.21       9.27 f
+  U454/O (NAND2X1TAS7)                     0.71       9.98 r
+  U298/O (NAND4B1X2TAS7)                   0.58      10.55 f
+  U297/O (NAND4B1X2TAS7)                   1.31      11.86 f
+  U970/O (NOR2B1X1TAS7)                    0.52      12.39 r
+  flags_out[2] (out)                       0.00      12.39 r
+  data arrival time                                  12.39
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  output external delay                   -2.00       7.80
+  data required time                                  7.80
+  -----------------------------------------------------------
+  data required time                                  7.80
+  data arrival time                                 -12.39
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.59
+
+
+  Startpoint: R_445 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mult_x_2/R_325
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_top            MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_445/CK (DFFRBQX4TAS7)                  0.00       0.00 r
+  R_445/Q (DFFRBQX4TAS7)                   2.80       2.80 r
+  U618/O (BUFX8TAS7)                       0.95       3.75 r
+  U912/O (NAND2B1X1TAS7)                   0.36       4.11 f
+  U669/O (OAI22B2X1TAS7)                   1.11       5.23 r
+  U374/S (HAX1TAS7)                        2.56       7.79 f
+  U759/CO (FAX1TAS7)                       3.52      11.31 f
+  U997/O (XOR2X1TAS7)                      1.81      13.12 f
+  mult_x_2/R_325/D (DFFRBQX2TAS7)          0.00      13.12 f
+  data arrival time                                  13.12
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  mult_x_2/R_325/CK (DFFRBQX2TAS7)         0.00       9.80 r
+  library setup time                      -1.19       8.61
+  data required time                                  8.61
+  -----------------------------------------------------------
+  data required time                                  8.61
+  data arrival time                                 -13.12
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.51
+
+
+  Startpoint: R_436 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_377 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_top            MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_436/CK (DFFRBQX4TAS7)                  0.00       0.00 r
+  R_436/Q (DFFRBQX4TAS7)                   3.02       3.02 r
+  U1058/O (XNOR2X2TAS7)                    2.13       5.15 r
+  U553/O (NAND2X2TAS7)                     0.51       5.66 f
+  U552/O (OAI12X2TAS7)                     1.25       6.91 r
+  U517/O (NAND2X1TAS7)                     0.50       7.41 f
+  U368/O (NAND2X1TAS7)                     0.62       8.03 r
+  U367/O (CLKINVX2TAS7)                    0.53       8.55 f
+  U509/O (NAND2X4TAS7)                     0.78       9.34 r
+  U356/O (CLKINVX1TAS7)                    0.43       9.76 f
+  U668/O (NAND4X1TAS7)                     0.68      10.44 r
+  U518/O (NAND4B1X2TAS7)                   0.82      11.26 f
+  U520/O (AOI12X2TAS7)                     0.91      12.17 r
+  U350/O (NAND4X1TAS7)                     0.70      12.87 f
+  R_377/D (DFFSBQX4TAS7)                   0.00      12.87 f
+  data arrival time                                  12.87
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  R_377/CK (DFFSBQX4TAS7)                  0.00       9.80 r
+  library setup time                      -1.41       8.39
+  data required time                                  8.39
+  -----------------------------------------------------------
+  data required time                                  8.39
+  data arrival time                                 -12.87
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.48
+
+
+  Startpoint: mult_x_2/R_410
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mult_x_2/R_354
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_top            MW0K                  M31LLSC750GL150MS_25CTT1P8_ctyp_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  mult_x_2/R_410/CK (DFFRBQX2TAS7)         0.00       0.00 r
+  mult_x_2/R_410/Q (DFFRBQX2TAS7)          2.40       2.40 r
+  U370/O (BUFX8TAS7)                       0.90       3.29 r
+  U283/O (XNOR2X2TAS7)                     1.49       4.78 r
+  U760/O (OAI22X2TAS7)                     0.51       5.29 f
+  U765/CO (FAX1TAS7)                       3.84       9.13 f
+  U710/O (XOR3X1TAS7)                      3.42      12.55 f
+  U995/O (NAND2X1TAS7)                     0.68      13.23 r
+  mult_x_2/R_354/D (DFFSBQX4TAS7)          0.00      13.23 r
+  data arrival time                                  13.23
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  mult_x_2/R_354/CK (DFFSBQX4TAS7)         0.00       9.80 r
+  library setup time                      -1.05       8.75
+  data required time                                  8.75
+  -----------------------------------------------------------
+  data required time                                  8.75
+  data arrival time                                 -13.23
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.47
+
+
+1

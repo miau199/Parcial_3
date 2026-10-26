@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : alu_top
+Version: X-2025.06-SP5-5
+Date   : Mon Oct 26 15:09:45 2026
+****************************************
+
+Library(s) Used:
+
+    M31LLSC750GL150MS_25CTT1P8_ctyp_ccs (File: /home/drueda/parcial3_parte2/pdk/M31LLSC750GL150MS_00.01.000/M31LLSC750GL150MS_00.01.000/ccs_db/M31LLSC750GL150MS_25CTT1P8_ctyp_ccs.db)
+
+Number of ports:                           57
+Number of nets:                          1272
+Number of cells:                         1225
+Number of combinational cells:           1016
+Number of sequential cells:               209
+Number of macros/black boxes:               0
+Number of buf/inv:                        252
+Number of references:                      62
+
+Combinational area:              14458.752093
+Buf/Inv area:                     1890.201601
+Noncombinational area:            9655.833618
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 24114.585711
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------
+alu_top                           24114.5857    100.0  14458.7521  9655.8336  0.0000  alu_top
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------
+Total                                                  14458.7521  9655.8336  0.0000
+
+1

@@ -1,0 +1,88 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : alu_top
+Version: X-2025.06-SP5-5
+Date   : Mon Oct 26 15:09:45 2026
+****************************************
+
+
+   max_delay/setup ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   mult_x_2/R_331/D             8.53          13.19 f        -4.66  (VIOLATED)
+   flags_out[2]                 7.80          12.39 r        -4.59  (VIOLATED)
+   mult_x_2/R_325/D             8.61          13.12 f        -4.51  (VIOLATED)
+   R_377/D                      8.39          12.87 f        -4.48  (VIOLATED)
+   mult_x_2/R_354/D             8.75          13.23 r        -4.47  (VIOLATED)
+   mult_x_2/R_355/D             8.75          13.23 r        -4.47  (VIOLATED)
+   mult_x_2/R_368_RW_0/D        8.45          12.82 f        -4.37  (VIOLATED)
+   R_35/D                       8.54          12.91 f        -4.36  (VIOLATED)
+   mult_x_2/R_374/D             8.55          12.82 r        -4.27  (VIOLATED)
+   R_452/D                      8.48          12.71 r        -4.24  (VIOLATED)
+   mult_x_2/R_332/D             8.55          12.78 f        -4.23  (VIOLATED)
+   mult_x_2/R_363/D             8.53          12.76 r        -4.23  (VIOLATED)
+   mult_x_2/R_237/D             8.53          12.76 f        -4.23  (VIOLATED)
+   mult_x_2/R_244/D             8.52          12.74 r        -4.22  (VIOLATED)
+   mult_x_2/R_299/D             8.61          12.82 f        -4.21  (VIOLATED)
+   mult_x_2/R_324/D             8.35          12.55 f        -4.19  (VIOLATED)
+   flags_out[3]                 7.80          11.98 r        -4.18  (VIOLATED)
+   result_out[15]               7.80          11.98 r        -4.18  (VIOLATED)
+   R_359/D                      8.77          12.95 r        -4.18  (VIOLATED)
+   mult_x_2/R_350/D             8.51          12.67 f        -4.16  (VIOLATED)
+   R_454/D                      8.46          12.61 f        -4.14  (VIOLATED)
+   mult_x_2/R_239/D             8.53          12.67 r        -4.14  (VIOLATED)
+   mult_x_2/R_367/D             8.67          12.71 r        -4.04  (VIOLATED)
+   result_out[14]               7.80          11.81 r        -4.01  (VIOLATED)
+   result_out[13]               7.80          11.78 r        -3.98  (VIOLATED)
+   R_41/D                       8.45          12.40 f        -3.95  (VIOLATED)
+   flags_out_reg[0]/D           8.63          12.50 f        -3.87  (VIOLATED)
+   result_out_reg[4]/D          8.37          12.22 r        -3.85  (VIOLATED)
+   R_376/D                      8.40          12.22 f        -3.82  (VIOLATED)
+   R_43/D                       8.49          12.22 f        -3.72  (VIOLATED)
+   R_29/D                       8.40          12.12 f        -3.71  (VIOLATED)
+   mult_x_2/R_303_RW_0/D        8.45          12.13 f        -3.67  (VIOLATED)
+   mult_x_2/R_385/D             8.46          12.13 f        -3.66  (VIOLATED)
+   mult_x_2/R_278/D             8.49          12.13 f        -3.64  (VIOLATED)
+   result_out[12]               7.80          11.44 r        -3.64  (VIOLATED)
+   mult_x_2/R_346/D             8.38          12.01 f        -3.63  (VIOLATED)
+   mult_x_2/R_378/D             8.46          12.08 f        -3.62  (VIOLATED)
+   mult_x_2/R_386/D             8.46          12.02 f        -3.56  (VIOLATED)
+   R_108/D                      8.49          11.97 f        -3.48  (VIOLATED)
+   R_123/D                      8.49          11.97 f        -3.48  (VIOLATED)
+   R_85/D                       8.49          11.97 f        -3.48  (VIOLATED)
+   R_206/D                      8.49          11.94 f        -3.45  (VIOLATED)
+   flags_out_reg[1]/D           8.55          11.92 r        -3.37  (VIOLATED)
+   mult_x_2/R_353/D             8.71          12.05 r        -3.34  (VIOLATED)
+   R_245/D                      8.49          11.82 f        -3.33  (VIOLATED)
+   R_357/D                      8.49          11.82 f        -3.33  (VIOLATED)
+   mult_x_2/R_335/D             8.30          11.53 f        -3.24  (VIOLATED)
+   mult_x_2/R_238/D             8.57          11.69 f        -3.12  (VIOLATED)
+   mult_x_2/R_309/D             8.46          11.56 f        -3.10  (VIOLATED)
+   mult_x_2/R_340/D             8.46          11.47 f        -3.01  (VIOLATED)
+   mult_x_2/R_336/D             8.31          11.32 f        -3.01  (VIOLATED)
+   mult_x_2/R_413/D             8.72          11.57 r        -2.85  (VIOLATED)
+   result_out_reg[3]/D          8.47          11.24 r        -2.77  (VIOLATED)
+   R_450/D                      8.50          11.23 r        -2.73  (VIOLATED)
+   mult_x_2/R_279/D             8.48          11.18 f        -2.69  (VIOLATED)
+   mult_x_2/R_381/D             8.44          11.10 f        -2.67  (VIOLATED)
+   R_453/D                      8.55          11.11 f        -2.57  (VIOLATED)
+   result_out[11]               7.80          10.34 r        -2.54  (VIOLATED)
+   mult_x_2/R_347/D             8.39          10.91 f        -2.52  (VIOLATED)
+   mult_x_2/R_310/D             8.53          11.04 r        -2.51  (VIOLATED)
+   mult_x_2/R_373/D             8.57          10.98 r        -2.41  (VIOLATED)
+   R_197/D                      8.49          10.68 f        -2.19  (VIOLATED)
+   mult_x_2/R_280/D             8.49          10.61 f        -2.12  (VIOLATED)
+   result_out_reg[2]/D          8.46          10.22 f        -1.75  (VIOLATED)
+   result_out[9]                7.80           9.44 r        -1.64  (VIOLATED)
+   result_out[10]               7.80           9.09 f        -1.29  (VIOLATED)
+   mult_x_2/R_379/D             8.46           9.72 f        -1.27  (VIOLATED)
+   mult_x_2/R_337/D             8.63           9.38 r        -0.75  (VIOLATED)
+   result_out_reg[1]/D          8.44           8.69 f        -0.24  (VIOLATED)
+   result_out_reg[0]/D          8.49           8.68 f        -0.20  (VIOLATED)
+
+
+1

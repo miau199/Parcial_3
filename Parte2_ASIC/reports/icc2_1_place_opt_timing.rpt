@@ -1,0 +1,52 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : alu_top
+Version: Y-2026.03-SP2
+Date   : Mon Oct 26 15:12:07 2026
+****************************************
+
+  Startpoint: mult_x_2_R_348 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: flags_out[2] (output port clocked by clk)
+  Mode: func
+  Corner: typical
+  Scenario: func_typical
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  mult_x_2_R_348/CK (DFFSBQX2TAS7)                 0.00      0.00 r
+  mult_x_2_R_348/Q (DFFSBQX2TAS7)                  1.98      1.98 r
+  U872/O (XOR2X1TAS7)                              1.74      3.72 f
+  U718/O (XNOR2X1TAS7)                             1.40      5.12 f
+  U302/O (OAI22B2X2TAS7)                           1.12      6.24 r
+  U693/O (XNOR2X1TAS7)                             1.90      8.14 f
+  U880/O (NAND2B1X1TAS7)                           0.45      8.59 r
+  U591/O (NAND2X1TAS7)                             0.34      8.93 f
+  U558/O (NAND2B1X1TAS7)                           0.74      9.68 f
+  U298/O (NAND4B1X2TAS7)                           1.22     10.90 f
+  U297/O (NAND4B1X2TAS7)                           1.30     12.19 f
+  U970/O (NOR2B1X1TAS7)                            0.52     12.72 r
+  flags_out[2] (out)                               0.00     12.72 r
+  data arrival time                                         12.72
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -2.00      7.80
+  data required time                                         7.80
+  ------------------------------------------------------------------------
+  data required time                                         7.80
+  data arrival time                                        -12.72
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -4.92
+
+
+1

@@ -1,0 +1,206 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 5
+        -report_by design
+Design : alu_top
+Version: Y-2026.03-SP2
+Date   : Mon Oct 26 15:12:19 2026
+****************************************
+
+  Startpoint: mult_x_2_R_348 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: flags_out[2] (output port clocked by clk)
+  Mode: func
+  Corner: typical
+  Scenario: func_typical
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  mult_x_2_R_348/CK (DFFSBQX2TAS7)                 0.00      0.00 r
+  mult_x_2_R_348/Q (DFFSBQX2TAS7)                  1.98      1.98 r
+  U872/O (XOR2X1TAS7)                              1.74      3.72 f
+  U718/O (XNOR2X1TAS7)                             1.40      5.12 f
+  U302/O (OAI22B2X2TAS7)                           1.12      6.24 r
+  U693/O (XNOR2X1TAS7)                             1.90      8.14 f
+  U880/O (NAND2B1X1TAS7)                           0.45      8.59 r
+  U591/O (NAND2X1TAS7)                             0.34      8.93 f
+  U558/O (NAND2B1X1TAS7)                           0.74      9.68 f
+  U298/O (NAND4B1X2TAS7)                           1.22     10.90 f
+  U297/O (NAND4B1X2TAS7)                           1.30     12.19 f
+  U970/O (NOR2B1X1TAS7)                            0.52     12.72 r
+  flags_out[2] (out)                               0.00     12.72 r
+  data arrival time                                         12.72
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  clock uncertainty                               -0.20      9.80
+  output external delay                           -2.00      7.80
+  data required time                                         7.80
+  ------------------------------------------------------------------------
+  data required time                                         7.80
+  data arrival time                                        -12.72
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -4.92
+
+
+
+  Startpoint: R_439 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mult_x_2_R_331 (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: typical
+  Scenario: func_typical
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  R_439/CK (DFFRBQX2TAS7)                          0.00      0.00 r
+  R_439/Q (DFFRBQX2TAS7)                           2.33      2.33 r
+  U784/O (XOR2X2TAS7)                              1.94      4.26 f
+  U785/O (NAND2X4TAS7)                             0.72      4.99 r
+  U328/O (OAI22B2X2TAS7)                           0.34      5.33 f
+  U753/O (XNOR2X1TAS7)                             1.73      7.05 f
+  U752/O (XNOR2X1TAS7)                             1.32      8.38 r
+  U751/O (XOR2X1TAS7)                              1.66     10.03 f
+  U365/O (XNOR2X2TAS7)                             1.96     11.99 f
+  U364/O (XNOR2X1TAS7)                             1.18     13.17 f
+  mult_x_2_R_331/D (DFFSBQX4TAS7)                  0.00     13.17 f
+  data arrival time                                         13.17
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  mult_x_2_R_331/CK (DFFSBQX4TAS7)                 0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -1.27      8.53
+  data required time                                         8.53
+  ------------------------------------------------------------------------
+  data required time                                         8.53
+  data arrival time                                        -13.17
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -4.64
+
+
+
+  Startpoint: mult_x_2_R_410 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mult_x_2_R_354 (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: typical
+  Scenario: func_typical
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  mult_x_2_R_410/CK (DFFRBQX2TAS7)                 0.00      0.00 r
+  mult_x_2_R_410/Q (DFFRBQX2TAS7)                  2.38      2.38 r
+  U370/O (BUFX8TAS7)                               0.85      3.22 r
+  U283/O (XNOR2X2TAS7)                             1.45      4.67 r
+  U760/O (OAI22X2TAS7)                             0.50      5.17 f
+  U765/CO (FAX1TAS7)                               3.80      8.96 f
+  U710/O (XOR3X1TAS7)                              3.39     12.35 f
+  U995/O (NAND2X1TAS7)                             0.67     13.02 r
+  mult_x_2_R_354/D (DFFSBQX4TAS7)                  0.00     13.02 r
+  data arrival time                                         13.02
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  mult_x_2_R_354/CK (DFFSBQX4TAS7)                 0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -1.04      8.76
+  data required time                                         8.76
+  ------------------------------------------------------------------------
+  data required time                                         8.76
+  data arrival time                                        -13.02
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -4.26
+
+
+
+  Startpoint: mult_x_2_R_410 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mult_x_2_R_355 (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: typical
+  Scenario: func_typical
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  mult_x_2_R_410/CK (DFFRBQX2TAS7)                 0.00      0.00 r
+  mult_x_2_R_410/Q (DFFRBQX2TAS7)                  2.38      2.38 r
+  U370/O (BUFX8TAS7)                               0.85      3.22 r
+  U283/O (XNOR2X2TAS7)                             1.45      4.67 r
+  U760/O (OAI22X2TAS7)                             0.50      5.17 f
+  U765/CO (FAX1TAS7)                               3.80      8.96 f
+  U710/O (XOR3X1TAS7)                              3.39     12.35 f
+  U996/O (NAND2X1TAS7)                             0.67     13.02 r
+  mult_x_2_R_355/D (DFFSBQX4TAS7)                  0.00     13.02 r
+  data arrival time                                         13.02
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  mult_x_2_R_355/CK (DFFSBQX4TAS7)                 0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -1.04      8.76
+  data required time                                         8.76
+  ------------------------------------------------------------------------
+  data required time                                         8.76
+  data arrival time                                        -13.02
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -4.26
+
+
+
+  Startpoint: mult_x_2_R_400 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mult_x_2_R_325 (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: typical
+  Scenario: func_typical
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  mult_x_2_R_400/CK (DFFRBQX1TAS7)                 0.00      0.00 r
+  mult_x_2_R_400/Q (DFFRBQX1TAS7)                  2.52      2.52 r
+  U789/O (NAND2X4TAS7)                             0.61      3.12 f
+  U244/O (INVX1TAS7)                               0.77      3.89 r
+  U669/O (OAI22B2X1TAS7)                           1.12      5.01 r
+  U374/S (HAX1TAS7)                                2.49      7.51 f
+  U759/CO (FAX1TAS7)                               3.50     11.01 f
+  U997/O (XOR2X1TAS7)                              1.79     12.80 f
+  mult_x_2_R_325/D (DFFRBQX2TAS7)                  0.00     12.80 f
+  data arrival time                                         12.80
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.00     10.00
+  mult_x_2_R_325/CK (DFFRBQX2TAS7)                 0.00     10.00 r
+  clock uncertainty                               -0.20      9.80
+  library setup time                              -1.19      8.61
+  data required time                                         8.61
+  ------------------------------------------------------------------------
+  data required time                                         8.61
+  data arrival time                                        -12.80
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -4.19
+
+
+1

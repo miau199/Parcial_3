@@ -23,3 +23,20 @@ webtalk*.log
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Temporales Synopsys / Servidor ASIC
+*.fsdb
+*.saif
+simv*
+*.daidir/
+csrc/
+novas.*
+*.svf
+*.mr
+*.pvl
+*.syn
+command.log
+default.svf
+*.tar.gz
+M31_workspace/
+*_lib.ndm/
